@@ -4,10 +4,10 @@
     "pages/logs/logs"
   ],
   "window": {
-    "navigationBarBackgroundColor": "#F8F8F8",
-    "backgroundColor": "#F8F8F8",
-    "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "演示"
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "GaoYuan",
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "color": "#333",

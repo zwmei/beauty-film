@@ -1,4 +1,29 @@
 <!-- index.wxml -->
 <view class="container">
-  <input placeholder="请输入关键词搜索" />
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+      获取头像昵称
+    </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      <button bindtap="clickMe">点击我</button>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto" selectable="{{true}}" space="emsp">{{motto}}</text>
+  </view>
+  <wxs module="foo">
+    var msg = 'hello world';
+    module.exports = {
+      msg: msg
+    }
+  </wxs>
+  <view>{{foo.msg}}</view>
+  <div>
+    <span>abc</span>
+  </div>
+  <button>确定</button>
+  <button type="primary">确定</button>
+  <button type="warn" size="mini" plain="{{true}}">确定</button>
 </view>

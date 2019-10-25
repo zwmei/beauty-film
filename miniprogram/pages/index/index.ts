@@ -6,9 +6,19 @@ const app = getApp<IMyApp>()
 
 Page({
   data: {
+    motto: new Date().getMonth() + '-' + new Date().getDate() + '-' +new Date().getDay(),
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
+  },
+  //事件处理函数
+  bindViewTap() {
+    wx.navigateTo({
+      url: '../logs/logs'
+    })
+  },
+  clickMe() {
+    this.setData!({motto: '哈哈哈哈'})
   },
   onLoad() {
     if (app.globalData.userInfo) {
