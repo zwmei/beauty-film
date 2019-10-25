@@ -6,22 +6,9 @@ const app = getApp<IMyApp>()
 
 Page({
   data: {
-    motto: '点击 “编译” 以构建',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
-  },
-  //事件处理函数
-  bindViewTap() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
-  },
-  bindDivTap(e: any) {
-    console.log(e);
-    this.setData!({
-      motto: 'div tap'
-    });
   },
   onLoad() {
     if (app.globalData.userInfo) {
@@ -50,13 +37,5 @@ Page({
         }
       })
     }
-  },
-  getUserInfo(e: any) {
-    console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
-    this.setData!({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
-    })
   }
 })
