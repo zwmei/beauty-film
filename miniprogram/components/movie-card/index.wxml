@@ -1,0 +1,12 @@
+<view class="component-movie-card">
+  <view class="top">
+    <image class="cover" mode="scaleToFill" src="{{propSrc}}" />
+    <text class="score">{{propScore}}</text>
+  </view>
+  <text class="name">{{propName}}</text>
+  <view class="label-list">
+    <text wx:for="{{propLabels}}" wx:for-item="label" wx:for-index="i" wx:key="i">
+      {{i}}.{{label}}
+    </text>
+  </view>
+</view>

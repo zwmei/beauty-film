@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "component-movie-card-block": "../../components/movie-card-block/index",
+    "component-movie-card": "../../components/movie-card/index"
+  }
 }

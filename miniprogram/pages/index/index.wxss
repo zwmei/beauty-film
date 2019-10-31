@@ -1,1 +1,12 @@
 /**index.wxss**/
+
+.movie-list {
+  padding: 0 10rpx;
+  width: calc(100% - 20rpx);
+
+}
+.list-item {
+  display: inline-block;
+  padding: 10rpx;
+  width: calc(50% - 20rpx);
+}

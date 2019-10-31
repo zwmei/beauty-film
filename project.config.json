@@ -5,7 +5,7 @@
 	},
 	"miniprogramRoot": "miniprogram/",
 	"compileType": "miniprogram",
-	"libVersion": "2.8.3",
+	"libVersion": "2.4.0",
 	"projectname": "beauty-film",
 	"scripts": {
 		"beforeCompile": "npm run tsc",

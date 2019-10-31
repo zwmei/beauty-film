@@ -2,6 +2,7 @@
 //获取应用实例
 import { IMyApp } from '../../app'
 
+const imageUrl = 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1572415291852&di=47c3ee463a7e93815c1b0e6c9f993c2f&imgtype=0&src=http%3A%2F%2Fimg.mp.sohu.com%2Fupload%2F20170721%2F39d97272bc444db18b9b58ae793978aa_th.png';
 const app = getApp<IMyApp>()
 
 Page({
@@ -9,6 +10,25 @@ Page({
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    coverList: [
+      imageUrl,
+      'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1572416287354&di=dbd620a6449737e40a40db23257bc81f&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fforum%2Fw%3D580%2Fsign%3D4d5e01bdba389b5038ffe05ab534e5f1%2F8cca9b8fa0ec08fa2ab208045aee3d6d54fbda28.jpg',
+      'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1572418396636&di=3b0ec109ce39249a5a4bb7aa1c434317&imgtype=0&src=http%3A%2F%2Fimg.zhichiwangluo.com%2Fzcimgdir%2Falbum%2Ffile_5aae72afb667a.jpg',
+    ],
+    movieList: [
+      {
+        src: imageUrl,
+        score: 4.2,
+        name: '血战湘江',
+        labels: ['战争', '爱情']
+      },
+      {
+        src: imageUrl,
+        score: 4.2,
+        name: '血战湘江',
+        labels: ['战争', '爱情']
+      }
+    ]
   },
   onLoad() {
     if (app.globalData.userInfo) {
@@ -37,5 +57,8 @@ Page({
         }
       })
     }
+  },
+  onClick(e: any) {
+    console.log(e);
   }
 })

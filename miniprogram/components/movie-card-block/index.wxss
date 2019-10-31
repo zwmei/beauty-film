@@ -1,0 +1,8 @@
+:host {
+  background: #ff00cc;
+}
+.cover {
+  width: 100%;
+  height: 200rpx;
+  display: block;
+}

@@ -1,0 +1,3 @@
+<view class="component-movie-card-block">
+  <image class="cover" src="{{propSrc}}" mode="scaleToFill" lazy-load="{{true}}" show-menu-by-longpress="{{true}}" bindtap="onClick" />
+</view>

@@ -1,0 +1,12 @@
+.a {
+  font-size: 12px;
+  .b{
+    font-family: 'Courier New', Courier, monospace;
+    .c {
+      font-style: italic;
+      .d {
+        width: calc(100% - 20rpx);
+      }
+    }
+  }
+}

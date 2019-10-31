@@ -1,4 +1,10 @@
 <!-- index.wxml -->
-<view class="container">
+<view class="container" bindtap="onClick">
   <input placeholder="请输入关键词搜索" />
+  <component-movie-card-block prop-src="{{coverList[0]}}" prop-b="10" />
+  <view class="movie-list">
+    <view class="list-item" wx:for="{{movieList}}" wx:key="{{item.name}}">
+      <component-movie-card prop-src="{{item.src}}" prop-score="{{item.score}}" prop-name="{{item.name}}" prop-labels="{{item.labels}}" />
+    </view>
+  </view>
 </view>
