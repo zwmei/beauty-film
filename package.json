@@ -3,13 +3,16 @@
   "version": "1.0.1",
   "scripts": {
     "compile": "./node_modules/typescript/bin/tsc",
-    "tsc": "node ./node_modules/typescript/lib/tsc.js"
+    "tsc": "node ./node_modules/typescript/lib/tsc.js",
+    "start": "npx tsc && npx gulp"
   },
   "devDependencies": {
     "@babel/core": "^7.6.4",
     "@babel/preset-env": "^7.6.3",
     "@babel/register": "^7.6.2",
     "gulp": "^4.0.2",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
     "node-sass": "^4.13.0",
     "typescript": "^3.3.3333"
