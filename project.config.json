@@ -8,9 +8,9 @@
 	"libVersion": "2.4.0",
 	"projectname": "beauty-film",
 	"scripts": {
-		"beforeCompile": "npm run tsc",
-		"beforePreview": "npm run tsc",
-		"beforeUpload": "npm run tsc"
+		"beforeCompile": "npm start",
+		"beforePreview": "npm start",
+		"beforeUpload": "npm start"
 	},
 	"setting": {
 		"urlCheck": true,

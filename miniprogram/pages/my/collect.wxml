@@ -1,0 +1,28 @@
+<view class="collect">
+    <view class="collect-swiper-tab">
+        <view class="collect-swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">
+            电影
+        </view>
+        <view class="collect-swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">
+            人物
+        </view>
+    </view>
+    <swiper current="{{currentTab}}" duration="300" bindchange="swiperTab">
+        <swiper-item class="collect-swiper-item">
+            <view>电影</view>
+            <view class='collect-empty'>
+                <image class='collect-empty-image' src="../../image/my/nodata.png" mode="cover"></image>
+                <view class='collect-empty-tip'>亲，找不到电影的收藏</view>
+                <button class='collect-empty-button'>去逛逛</button>
+            </view>
+        </swiper-item>
+        <swiper-item class="collect-swiper-item">
+            <view>人物</view>
+            <view class='collect-empty'>
+                <image class='collect-empty-image' src="../../image/my/nodata.png" mode="cover"></image>
+                <view class='collect-empty-tip'>亲，找不到人物的收藏</view>
+                <button class='collect-empty-button'>去逛逛</button>
+            </view>
+        </swiper-item>
+    </swiper>
+</view>

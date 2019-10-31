@@ -3,12 +3,14 @@ Page({
         userInfo: {}
     },
     onLoad() {
-        console.log(wx);
         wx.getUserInfo({
             success: res => {
-                console.log(res);
                 this.setData!({ userInfo: res.userInfo })
             }
         })
+    },
+    goTo(e: { currentTarget: { dataset: { address: string } } }) {
+        const targetPage = e.currentTarget.dataset.address;
+        wx.navigateTo({ url: targetPage })
     }
 })

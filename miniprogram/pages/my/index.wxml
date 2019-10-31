@@ -12,7 +12,7 @@
     </view>
     <view class="my-function">
         <view class="my-function-row">
-            <view class="my-function-item">
+            <view class="my-function-item" bindtap="goTo" data-address='collect'>
                 <view class='my-function-item-pic-container'>
                     <image class='my-function-item-pic' src="../../image/my/collect.png" mode="cover"></image>
                 </view>
