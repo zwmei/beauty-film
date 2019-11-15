@@ -9,8 +9,6 @@
         "backgroundTextStyle": "light",
         "navigationBarBackgroundColor": "#fff",
         "navigationBarTitleText": "GaoYuan",
-        "navigationBarTextStyle": "black"
-    },
     "tabBar": {
         "color": "#333",
         "selectedColor": "green",
