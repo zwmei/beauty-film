@@ -1,10 +1,10 @@
 {
   "compilerOptions": {
-    "baseUrl": "./miniprogram",
+    "baseUrl": ".",
     "strictNullChecks": true,
     "noImplicitAny": true,
     "module": "CommonJS",
-    "target": "ES5",
+    "target": "ES2015",
     "allowJs": false,
     "experimentalDecorators": true,
     "noImplicitThis": true,

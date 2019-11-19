@@ -1,0 +1,10 @@
+<template name="filmList">
+    <block wx:if="{{showLoading}}">
+        <view class="loading">加载中…</view>
+    </block>
+    <block wx:else>
+        <view class="film">
+            好电影
+        </view>
+    </block>
+</template>

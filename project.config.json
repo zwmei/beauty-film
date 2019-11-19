@@ -5,7 +5,7 @@
 	},
 	"miniprogramRoot": "miniprogram/",
 	"compileType": "miniprogram",
-	"libVersion": "2.4.0",
+	"libVersion": "2.9.3",
 	"projectname": "beauty-film",
 	"scripts": {
 		"beforeCompile": "npm start",
@@ -13,11 +13,11 @@
 		"beforeUpload": "npm start"
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"enhance": false,
-		"postcss": true,
-		"minified": true,
+		"postcss": false,
+		"minified": false,
 		"newFeature": true,
 		"coverView": true,
 		"nodeModules": false,

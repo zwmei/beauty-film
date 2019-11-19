@@ -1,43 +1,45 @@
 {
-    "pages": [
-        "pages/index/index",
-        "pages/logs/logs",
-        "pages/my/index",
-        "pages/my/collect"
-    ],
-    "window": {
-        "backgroundTextStyle": "light",
-        "navigationBarBackgroundColor": "#fff",
-        "navigationBarTitleText": "GaoYuan",
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/my/index",
+    "pages/my/collect"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "GaoYuan",
     "tabBar": {
-        "color": "#333",
-        "selectedColor": "green",
-        "list": [
-            {
-                "pagePath": "pages/index/index",
-                "iconPath": "image/icon_component.png",
-                "selectedIconPath": "image/icon_component_HL.png",
-                "text": "热映"
-            },
-            {
-                "pagePath": "pages/index/index",
-                "iconPath": "image/icon_component.png",
-                "selectedIconPath": "image/icon_component_HL.png",
-                "text": "待映"
-            },
-            {
-                "pagePath": "pages/index/index",
-                "iconPath": "image/icon_component.png",
-                "selectedIconPath": "image/icon_component_HL.png",
-                "text": "口碑"
-            },
-            {
-                "pagePath": "pages/my/index",
-                "iconPath": "image/my.png",
-                "selectedIconPath": "image/my-active.png",
-                "text": "我的"
-            }
-        ]
+      "color": "#333",
+      "selectedColor": "green",
+      "list": [
+        {
+          "pagePath": "pages/index/index",
+          "iconPath": "image/icon_component.png",
+          "selectedIconPath": "image/icon_component_HL.png",
+          "text": "热映"
+        },
+        {
+          "pagePath": "pages/index/index",
+          "iconPath": "image/icon_component.png",
+          "selectedIconPath": "image/icon_component_HL.png",
+          "text": "待映"
+        },
+        {
+          "pagePath": "pages/index/index",
+          "iconPath": "image/icon_component.png",
+          "selectedIconPath": "image/icon_component_HL.png",
+          "text": "口碑"
+        },
+        {
+          "pagePath": "pages/my/index",
+          "iconPath": "image/my.png",
+          "selectedIconPath": "image/my-active.png",
+          "text": "我的"
+        }
+      ]
     },
     "sitemapLocation": "sitemap.json"
+  },
+  "sitemapLocation": "sitemap2.json"
 }
